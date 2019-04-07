@@ -115,8 +115,8 @@ with g1.as_default() as g:
                 yolo = tf.concat(new_split, 3, name = "out")
             return yolo
 
-        height = 416
-        width = 416
+        height = 160
+        width = 160
         anchor1 = ((344,319), (135,169), (81,82))
         anchor2 = ((37,58), (23,27), (10,14))
         classes = 80

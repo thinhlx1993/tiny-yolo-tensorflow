@@ -14,7 +14,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 saver = tf.train.import_meta_graph("./graph/tiny-yolo.ckpt.meta")
 with tf.Session() as sess:
-    saver.restore(sess, "./graph/tiny-yolo.ckpt")
+    # saver.restore(sess, "./graph/tiny-yolo.ckpt")
     g = sess.graph
     with g.name_scope("TRAINER"):
         X = g.get_tensor_by_name("YOLO/input:0")
