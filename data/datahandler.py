@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# import sh
+import sh
 import os
 import random
 import numpy as np
@@ -190,5 +190,5 @@ if __name__ == "__main__":
         cv2.rectangle(image, (x1, y1), (x2, y2), (0,0,0),2)
 
     cv2.imwrite("temp.jpg", image)
-    # sh.eog("temp.jpg")
-    # sh.rm("temp.jpg")
+    sh.eog("temp.jpg")
+    sh.rm("temp.jpg")
